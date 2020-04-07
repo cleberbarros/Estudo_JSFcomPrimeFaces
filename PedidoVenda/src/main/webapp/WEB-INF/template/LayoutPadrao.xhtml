@@ -13,6 +13,18 @@
      </h:head>
      
      <h:body>
+     
+     	<p:ajaxStatus styleClass="ajax-status">
+     		<f:facet name="start">
+     			<h:graphicImage library="images" name="carregando.gif" />
+     		</f:facet>
+     		
+     		<f:facet name="complete">
+     			<h:outputText value="" />
+     		</f:facet>
+     		
+     	</p:ajaxStatus>
+     
      	<header>
      		<div>
      			<h:link>
@@ -21,17 +33,19 @@
      		</div>
      	
      	</header>
-     </h:body>    
 
-	<div id="conteudo">
-		<ui:insert name="corpo"/>
-	</div>
-	
-	<p:separator style="margin-top: 20px"/>
-	
-	<footer>
-		Soft Ágil - Sistema com a agilidade que vocÊ precisa!
-		<a href="http://bit.ly/Y8saFl" target="_blank">www.algaworks.com</a>
-	</footer>
+		<div id="conteudo">
+			<ui:insert name="corpo"/>
+		</div>
+		
+		<p:separator style="margin-top: 20px"/>
+		
+		<footer>
+			Soft Ágil - Sistema com a agilidade que vocÊ precisa!
+			<a href="http://bit.ly/Y8saFl" target="_blank">www.algaworks.com</a>
+		</footer>
+
+   </h:body>    
+
 
 </html>      
