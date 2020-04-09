@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+      
+       <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        </h:head>
+        
+        <h:body>
+        	<h:form id="frm">
+        		<p:tabView>
+        			<p:tab title="Dados Pessoais"> 
+        			
+        				<p:panelGrid columns="2" id="painel" style="width: 100%; margin-top:20px ">
+	  			
+				  			<p:outputLabel value="SKU" for="sku"/>
+				  			<p:inputText id="sku" size="20" maxlength="20"/>
+				  			
+				  			<p:outputLabel value="Nome" for="nome"/>
+				    		<p:inputText id="nome" size="60" maxlength="80"/>
+			    		</p:panelGrid>
+        			    			
+        			</p:tab>
+        			
+        			<p:tab title="Endereço">
+        						<p:panelGrid columns="2" id="painel2" style="width: 100%; margin-top:20px" >
+	        						<p:outputLabel value="Subcategoria" for="subCategoria"/>
+						    		<p:selectOneMenu id="subCategoria">
+						    			<f:selectItem itemLabel="Selecione a subcategoria"/>
+						    		</p:selectOneMenu>
+	        						
+        						</p:panelGrid>
+        			</p:tab>
+        		</p:tabView>
+        	</h:form>
+        
+        </h:body>
+      
+</html>      
